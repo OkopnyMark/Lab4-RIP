@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Laba4</title>
+</head>
+<body>
+    page with variable
+    <ul>
+        {% for element in list %}
+            {% if element == '1' %}
+                <li> Один </li>
+            {% elif element == '2' %}
+                <li> Два </li>
+            {% elif element == 'nikita' %}
+                <li> Три </li>
+            {% else  %}
+                <li> {{ element }} </li>
+            {% endif %}
+        {% empty %}
+            Список пуст!
+        {% endfor %}
+    </ul>
+
+</body>
+</html>
